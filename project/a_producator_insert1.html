@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+<body>
+
+<!-- style for hyprlink and table -->
+<style>
+<!-- table style -->
+table, td, th 
+{
+	border: none;
+}
+
+table 
+{
+  border-collapse: collapse;
+}
+
+th 
+{
+  height: 50px;
+  text-align: left;
+  width: 70%;
+}
+
+td 
+{
+  height: 50px;
+   text-align: left;
+  width: 30%;
+}
+
+<!-- hyperlink style -->
+a:link 
+{
+	color: orange;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited 
+{
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color: orange;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active 
+{
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<form method="post" action="a_producator_insert2.php">
+	<h2> Add a new manufacturer </h2>
+	<!-- table -->
+	<table>
+	
+	  <!-- first row -->
+	  <tr>
+		<td>
+			Manufacturer name:
+		</td>
+		<td>
+        <input type="text" name="name" />
+		</td>
+	  </tr>
+	  
+	  
+	  <!-- second row -->
+	  <tr>
+		<td>
+			Address:
+		</td>
+		<td>
+			<input type="text" name="address" />
+		</td>
+	  </tr>
+	  
+	  <!-- third row -->
+	  <tr>
+		<td>
+			Email:
+		</td>
+		<td>
+			<input type="text" name="email" />
+		</td>
+	  </tr> 
+	  
+	   <!-- third row -->
+	  <tr>
+		<td>
+			Phone:
+		</td>
+		<td>
+			<input type="text" name="phone" />
+		</td>
+	  </tr> 
+	   
+	</table><br><br>	
+
+	
+	<input type="submit" name="submit" value="Submit">
+	<input type="reset" value="Clear">
+	
+	
+</form>
+
+</body>
+</html>

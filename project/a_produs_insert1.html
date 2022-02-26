@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+<body>
+
+<!-- style for hyprlink and table -->
+<style>
+<!-- table style -->
+table, td, th 
+{
+	border: none;
+}
+
+table 
+{
+  border-collapse: collapse;
+}
+
+th 
+{
+  height: 50px;
+  text-align: left;
+  width: 70%;
+}
+
+td 
+{
+  height: 50px;
+   text-align: left;
+  width: 30%;
+}
+
+<!-- hyperlink style -->
+a:link 
+{
+	color: orange;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited 
+{
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color: orange;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active 
+{
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<form method="post" action="a_produs_insert2.php">
+	<h2> Add a new product </h2>
+	<!-- table -->
+	<table>
+	  
+	  <!-- first row -->
+	  <tr>
+		<td>
+			Manufacturer code:
+		</td>
+		<td>
+			<input type="text" name="codeManufacturer" />
+		</td>
+	  </tr>
+	  
+	  <!-- second row -->
+	  <tr>
+		<td>
+			Product's name:
+		</td>
+		<td>
+			<input type="text" name="nameProduct" />
+		</td>
+	  </tr> 
+	  
+	    <!-- third row -->
+	  <tr>
+		<td>
+			ID product type:
+		</td>
+		<td>
+			<input type="text" name="typeProduct" />
+		</td>
+	  </tr> 
+	  
+	  
+	  	    <!-- third row -->
+	  <tr>
+		<td>
+			Manufacturer's price:
+		</td>
+		<td>
+			<input type="text" name="priceManufacturer" />
+		</td>
+	  </tr> 
+	  
+	</table><br><br>	
+
+	
+	<input type="submit" name="submit" value="Submit">
+	<input type="reset" value="Clear">
+	
+	
+</form>
+
+</body>
+</html>

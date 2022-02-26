@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+<body>
+
+<!-- style for hyprlink and table -->
+<style>
+<!-- table style -->
+table, td, th 
+{
+	border: none;
+}
+
+table 
+{
+  border-collapse: collapse;
+}
+
+th 
+{
+  height: 50px;
+  text-align: left;
+  width: 70%;
+}
+
+td 
+{
+  height: 50px;
+   text-align: left;
+  width: 30%;
+}
+
+<!-- hyperlink style -->
+a:link 
+{
+	color: orange;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited 
+{
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color: orange;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active 
+{
+	color: red;
+	background-color: transparent;
+	text-decoration: none;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<form method="post" action="a_lista_comenzi_insert2.php">
+	<h2> Add a new order in orders list </h2>
+	<!-- table -->
+	<table>
+	  <!-- first row -->
+	  <tr>
+		<td>
+			Order number
+		</td>
+		<td>
+			<input type="text" name="orderNumber" />
+		</td>
+	  </tr>
+	  
+	  <!-- second row -->
+	  <tr>
+		<td>
+			Article code:
+		</td>
+		<td>
+			<input type="text" name="codeArticle" />
+		</td>
+	  </tr>
+	  
+	  <!-- third row -->
+	  <tr>
+		<td>
+			Price:
+		</td>
+		<td>
+			<input type="text" name="price" />
+		</td>
+	  </tr> 
+	  
+	   <!-- fourth row -->
+	  <tr>
+		<td>
+			Amount:
+		</td>
+		<td>
+			<input type="text" name="amount" />
+		</td>
+	  </tr>
+	  
+
+	</table><br><br>	
+
+	
+	<input type="submit" name="submit" value="Submit">
+	<input type="reset" value="Clear">
+	
+	
+</form>
+
+</body>
+</html>
